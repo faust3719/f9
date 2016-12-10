@@ -57,7 +57,8 @@ $this->title = 'Привет';
     } else {
         ?>
 <div class="col-lg-4">
-                <h2>Отправить деньги</h2>
+                <h2>Отправить деньги</h2> 
+       <p><a class="btn btn-lg btn-success">Остаток: <?php echo Yii::$app->user->identity->schet; ?></a></p>
 
         <p><a class="btn btn-lg btn-success" href="./index.php?r=send%2Fcreate">Отправить деньги</a></p>
         <p><a class="btn btn-lg btn-success" href="./index.php?r=user%2Fupdate&id=<?php echo Yii::$app->user->identity->id; ?>">Пополнить счет</a></p>
